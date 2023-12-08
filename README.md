@@ -54,25 +54,119 @@ Nurse:
 
 ## Front end pages and UML
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/7d324d83-7d3e-4e44-be4a-e62fa048c625" width="300">
-<img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/7d324d83-7d3e-4e44-be4a-e62fa048c625" width="300">
-<img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/7d324d83-7d3e-4e44-be4a-e62fa048c625" width="300">
-<img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/7d324d83-7d3e-4e44-be4a-e62fa048c625" width="300">
+<br>
+Add Patient Page:
+The "Add Patient" page in our clinical management system is shown to the receptionist in the case of adding a new patient. There is some information that needs to be taken from the patient to help in gaining an overview of the patient.
+The first thing to be taken is the patient's name, followed by the date of birth, which the receptionist can choose from the calendar directly, automatically calculated age. The national ID, so later the receptionist can search for the patient using it as a unique identifier. The gender is a drop-down menu to make it easy for the receptionist to choose, as well as the blood group. Moreover, the phone number is taken from the patient if they need it later. The last thing is the patient status, so if the receptionist wants to add something extra or if there is health insurance.
+The "Edit", "Save", and "Cancel" buttons are located at the bottom of the "Add Patient" page. The "Edit" button allows the patient to change their existing information. The "Save" button creates a new patient record in the system or updates an existing record. The "Cancel" button exits the page without saving any changes
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/e91b6524-9da6-4bf3-9bd1-b5e9b6cb7313" width="300">
+<br>
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/c35d0f00-e4ea-45db-9f3e-c9943990209f" width="300">
+<br>
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/ddf07e54-5f17-4f53-b975-f3da9aa24bcc" width="300">
+<br>
+Log In Page:
+Every user will have a unique username and password to log in to his account when he clicks on the log in button and according to the username his specific view will appear.
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/7956a159-83e7-47ef-a16f-c147dcd475aa" width="300">
+<br>
+Patient History Page:
+The history page is accessible to the admin, receptionist, doctor, and nurse within the clinic’s system ensuring that relevant medical personnel can retrieve and update crucial patient information. It is initially completed upon the patient’s first arrival and serves as a comprehensive repository of the patient’s medical history. Its purpose is to document and store essential details about the patient's medical background.
+The History page is organized into three distinct sections, each focusing on specific aspects of the patient's medical history:
+Past and Present Medical Problems:
+•	This section captures information about the patient's historical and current medical issues.
+•	Questions within this section are answered by marking checkboxes relevant to the patient's specific medical conditions, such as high blood pressure or a history of heart attacks.
+
+
+
+
+Present Medications and Allergies:
+•	This section compiles details about the patient's current medications and any known allergies.
+•	Specific allergy-related questions are included, such as allergies to penicillin, aspirin, or sulfa drugs.
+Reviews of Systems:
+•	The third section delves into an assessment of various body systems, including the endocrine and gastrointestinal systems.
+•	System-specific questions aim to gather information about the patient's overall health and specific organ systems.
+Question Types:
+•	Questions within each section are designed as checkboxes, facilitating a straightforward process for healthcare professionals to record relevant information.
+•	Examples include inquiries about high blood pressure, prior heart attacks, and allergies to specific medications.
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/0fe8ced3-4229-49f9-b2cc-bd8f4931bb1d" width="300">
+<br>
+Analytics Page:
+The data analysis page is a key feature accessible in the admin, doctor, and nurse views through the “Analytics” button located in the navigation bar on the left side of the program for easy access. Its main function is to provide a comprehensive overview of medical data and patient progress. It contains multiple charts that display this data.
+Patients Progress Chart:
+•	This chart visually represents the progress of patients over a specific timeline.
+•	The chart serves as a valuable tool for checking whether patients are improving and shows the effectiveness of implemented medical approaches.
+Patient Recovery Chart:
+•	Following the Patients Progress Chart, there is a dedicated chart for displaying the average patient recovery and associated ratios.
+•	This chart provides insights into the overall recovery trends, allowing the viewer to discern patterns and variations.
+Test Results Chart:
+•	Another feature is the "Test" chart, which displays the average test results of all patients.
+•	The chart indicates the distribution of results on the scale, revealing whether they fall below, within, or above the normal range.
+•	This visual representation aids in quickly identifying trends and abnormalities in test outcomes.
+Frequently Used Medicine Chart:
+•	The final component is the "Frequently Used Medicine" chart, designed to showcase the medications most commonly prescribed by doctors.
+•	This chart offers valuable insights into the prevalence of specific medications in the treatment process.
+•	By identifying frequently prescribed medications, it encourages doctors to delve deeper into studying and researching these drugs, fostering a continuous search for better alternatives.
+
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/cb38e125-9173-464c-81da-86014ea424c2" width="300">
+<br>
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/d72bbef3-f84e-4e61-be04-eb4cae04949c" width="300">
+<br>
+Nurse home page
+The nurse's homepage is a comprehensive dashboard designed to streamline and optimize the healthcare workflow. It provides a dynamic overview of the doctors available in the clinic, along with the specific types of appointments they offer. The interface offers real-time status updates on both doctors and patients, allowing the nurse to efficiently manage and coordinate medical care. A key feature of the homepage is the visibility into the number of bookings and sessions, offering insights into the clinic's overall activity. Additionally, the nurse can access detailed information about the current appointments, ensuring seamless coordination between medical professionals and patients. The inclusion of a calendar feature provides a convenient snapshot of upcoming appointments, complete with details such as the date, time, and the specific type of appointment scheduled. This nurse-centric homepage serves as a powerful tool for effective patient care coordination, enhancing communication, and promoting an organized and efficient healthcare environment.
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/40ee799f-047d-4f99-9ef7-33b48a2a9caf" width="300">
+<br>
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/28f7466e-cbab-4262-975e-384cd425a314" width="300">
+<br>
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/f33f02f8-6eea-4ff0-8c48-3642a0858f68" width="300">
+<br>
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/3b259a0b-1373-4bbb-b3cb-e3d0c757a503" width="300">
+<br>
+The View Equipment page: It provides a comprehensive overview of equipment information and enables users to make necessary modifications to the data. Upon accessing the page, users are presented with a detailed breakdown of equipment specifications, including the equipment name ,  type, vendor, acquisition cost, and expected lifespan. This readily available information allows users to quickly grasp the essential details of each equipment asset.
+To facilitate data modification, the page incorporates intuitive editing capabilities. Users can seamlessly update any of the equipment's attributes by simply clicking on the corresponding field and entering the desired changes. The editing process is streamlined, ensuring a user-friendly experience for all individuals accessing the page.
+In instances where users decide not to make any alterations to the equipment data, they can effortlessly revert to the original information by clicking the "Cancel" button. This option provides users with the flexibility to maintain the existing data without any unnecessary modifications.
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/588f1b44-9f8c-404f-9c85-d23df1d93825" width="300">
+<br>
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/b9511692-ebd5-4816-a856-144f9776d6b0" width="300">
+<br>
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/23f759d0-28ca-44c4-ba0d-39984d9cf635" width="300">
+<br>
+Receptionist home page
+The receptionist's homepage serves as a centralized hub for efficient management of patient interactions within the clinic. Featuring a user-friendly interface, the homepage boasts a prominent search button, allowing the receptionist to swiftly locate patients by name. Upon activation, this button generates a convenient dropdown menu presenting a comprehensive list of patients in the clinic. The interface also provides an appointment overview section, displaying key details such as the total number of appointments, the most recent appointment, and the upcoming appointment. This streamlined overview enables the receptionist to stay well-informed about the clinic's schedule. Moreover, the receptionist can seamlessly add new appointments through a dedicated function. For enhanced patient care, the homepage includes a contact details section, facilitating quick access to essential information. To ensure optimal communication and timely updates, the system is equipped with reminder features, notifying the receptionist of any changes or additions to the appointment schedule. This integrated and intuitive system empowers the receptionist to efficiently navigate patient information and maintain a well-organized appointment workflow.
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/2da8a649-c0a7-4741-ab36-582c4d6caf85" width="300">
+<br>
+The Add Equipment page provides a convenient platform for entering new equipment information into the system. Upon accessing the page, users are presented with a structured form that captures all the necessary details about the equipment. This includes fields for the operating system name, equipment type, vendor, acquisition cost, and expected lifespan. Users can seamlessly enter the relevant information into these fields, ensuring that the system maintains a comprehensive record of each equipment asset.
+To facilitate data entry, the page incorporates intuitive input mechanisms. Users can effortlessly enter the equipment's specifications by simply clicking on the corresponding fields and typing the desired information. The form is designed to be user-friendly, minimizing the potential for errors and ensuring a smooth data entry process.
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/ffd9f931-a30d-4c87-815d-d2590ebdd9cc" width="300">
+<br>
+Patient Search  
+On this page, the user can see a list of all registered patients in the system. They can search for a specific patient by using the search bar. After finding the patient they are looking for, they can click on the "View" button to see all the information about that patient.
+
+</br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/0b507e5a-c39f-43d5-8dfb-4de742808625" width="300">
+<br>
+</br>
 
 
