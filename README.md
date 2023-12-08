@@ -65,6 +65,7 @@ The "Edit", "Save", and "Cancel" buttons are located at the bottom of the "Add P
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/c35d0f00-e4ea-45db-9f3e-c9943990209f" width="300">
 <br>
+Dr. Homepage.  It provides a centralized hub for accessing patient information, test results, medical records, and other essential data. Dr. Homepage, doctors can efficiently navigate through various modules, such as appointment scheduling, fees and patient case. When dr. Press on details button it will take him to the patient files. 
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/ddf07e54-5f17-4f53-b975-f3da9aa24bcc" width="300">
 <br>
@@ -130,10 +131,11 @@ The nurse's homepage is a comprehensive dashboard designed to streamline and opt
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/28f7466e-cbab-4262-975e-384cd425a314" width="300">
 <br>
+The patient integrated view offers healthcare professionals a comprehensive overview of a patient's medical history and current health status. It brings together information from various sources, including medical records, test results, medications, allergies, and treatment plans, into a centralized and easily accessible interface. Through the patient integrated view, doctors gain a holistic understanding of the patient's health, enabling them to make well-informed clinical decisions.
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/f33f02f8-6eea-4ff0-8c48-3642a0858f68" width="300">
 <br>
-
+The prescription page facilitates the safe and efficient management of medication prescriptions for patients. It provides healthcare professionals with to prescribe and manage medications accurately. Within the prescription page, doctors can access comprehensive drug databases, including dosage information, potential interactions, and contraindications. This enables them to make informed decisions and select the most appropriate medications for their patients. Additionally, the prescription page often includes features to streamline the prescription workflow, such as electronic prescribing, automated drug-drug interaction checks, and allergy alerts. 
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/3b259a0b-1373-4bbb-b3cb-e3d0c757a503" width="300">
 <br>
@@ -143,9 +145,14 @@ In instances where users decide not to make any alterations to the equipment dat
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/588f1b44-9f8c-404f-9c85-d23df1d93825" width="300">
 <br>
+The "Settings" page in our system serves for users to customize and configure their preferences, enhancing their overall experience with the platform. This page has a variety of choices designed to specific user requirements.
+The user can change the profile picture, the password, or the username. Moreover, if the user wants to request an absence day, choose the day and a drop-down menu for the reasons to take the absence day, then request the absence from the admin. Lastly, if there is something in the system the user wants to request access to, the drop-down menu for these accesses will have a request access button to send to the admin to accept it.
+Finally, the "Settings" page is designed with a user-friendly interface, ensuring that users can easily navigate and configure their preferences. It contributes to a personalized and efficient user experience, allowing individuals to tailor the system to their unique requirements. 
+
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/b9511692-ebd5-4816-a856-144f9776d6b0" width="300">
 <br>
+The patient data analysis page in that allows healthcare professionals to delve into and analyze patient data in a meaningful way. This page provides a range of analytical capabilities, such as generating charts, graphs, and reports based on patient demographics, diagnoses, treatments, and outcomes. By leveraging the patient data analysis page, healthcare providers can identify patterns, trends, and correlations, which can inform clinical decision-making, quality improvement initiatives, and research efforts. 
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/23f759d0-28ca-44c4-ba0d-39984d9cf635" width="300">
 <br>
