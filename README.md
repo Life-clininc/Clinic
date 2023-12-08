@@ -62,6 +62,7 @@ The "Edit", "Save", and "Cancel" buttons are located at the bottom of the "Add P
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/e91b6524-9da6-4bf3-9bd1-b5e9b6cb7313" width="300">
 <br>
+The equipments page where it shows all the equipments in the clinic and provides details about them
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/c35d0f00-e4ea-45db-9f3e-c9943990209f" width="300">
 <br>
@@ -119,6 +120,7 @@ Frequently Used Medicine Chart:
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/cb38e125-9173-464c-81da-86014ea424c2" width="300">
 <br>
+OCR page where the source document could be a scanned image or a photograph of printed or handwritten text. The OCR technology has converted the visual elements of the document into machine-readable text, allowing for digital storage, searchability, and editing
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/d72bbef3-f84e-4e61-be04-eb4cae04949c" width="300">
 <br>
@@ -128,6 +130,7 @@ The nurse's homepage is a comprehensive dashboard designed to streamline and opt
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/40ee799f-047d-4f99-9ef7-33b48a2a9caf" width="300">
 <br>
+The page provides the fees for a specific patient
 </br>
 <img src="https://github.com/zeinagarhy/zeinagarhy/assets/149964130/28f7466e-cbab-4262-975e-384cd425a314" width="300">
 <br>
