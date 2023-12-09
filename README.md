@@ -183,6 +183,7 @@ On this page, the user can see a list of all registered patients in the system. 
 - Silvia:
 - Sama:
 - Ann:
+- Zeina:
 - Rawan:
 - Nourhan:
 
