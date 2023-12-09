@@ -179,4 +179,10 @@ On this page, the user can see a list of all registered patients in the system. 
 <br>
 </br>
 
+## Contribution
+- Silvia:
+- Sama:
+- Ann:
+- Rawan:
+- Nourhan:
 
