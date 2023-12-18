@@ -1,0 +1,423 @@
+﻿<Window x:Class="CareTech.AddPatient"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CareTech"
+        mc:Ignorable="d"
+        Title="AddPatient" Height="600" Width="700" WindowStartupLocation="CenterScreen">
+	<Grid>
+		<Grid.Background>
+			<LinearGradientBrush StartPoint="0,1" EndPoint="1,0">
+				<GradientStop Color="#FFFFFF" Offset="0"/>
+				<GradientStop Color="LightGray" Offset="1"/>
+			</LinearGradientBrush>
+		</Grid.Background>
+		<StackPanel Orientation="Vertical" >
+			<Grid Height="50">
+				<StackPanel Orientation="Vertical">
+					<StackPanel Orientation="Horizontal" Height="40" Background="White">
+						<Grid Width="100">
+							<Button BorderThickness="0" Content="Overview" Background="White"></Button>
+						</Grid>
+						<Grid Width="100">
+							<Button BorderThickness="0" Content="History" Background="White"></Button>
+						</Grid>
+					</StackPanel>
+				</StackPanel>
+			</Grid>
+			<StackPanel Orientation="Vertical" VerticalAlignment="Bottom" Width="600" Height="500">
+				<Grid x:Name="main" Width="600" Height="400" Visibility="Collapsed">
+					<StackPanel Orientation="Vertical" Height="400">
+						<Grid Height="44">
+							<StackPanel Orientation="Horizontal" Height="30" Width="600">
+								<Grid Width="200">
+									<TextBlock Text="Patieint Name" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold" FontFamily="Lato"></TextBlock>
+								</Grid>
+								<Grid Width="400" Height="30">
+									<TextBox></TextBox>
+								</Grid>
+							</StackPanel>
+						</Grid>
+						<Grid Height="44">
+							<StackPanel Orientation="Horizontal" Height="30" Width="600">
+								<Grid Width="200">
+									<TextBlock Text="Date of Birth" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold" FontFamily="Lato"></TextBlock>
+								</Grid>
+								<Grid Width="200" Height="30">
+									<DatePicker></DatePicker>
+								</Grid>
+							</StackPanel>
+						</Grid>
+						<Grid Height="44">
+							<StackPanel Orientation="Horizontal" Height="30" Width="600">
+								<Grid Width="200">
+									<TextBlock Text="Age" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold" FontFamily="Lato"></TextBlock>
+								</Grid>
+								<Border BorderThickness="0" Width="170" Height="25">
+									<TextBox  Text="00"></TextBox>
+								</Border>
+								<Border BorderThickness="0" Width="20" Height="25">
+									<StackPanel Orientation="Vertical">
+										<Border BorderThickness="0" Height="12.5">
+											<Button BorderThickness="0" RenderTransformOrigin="0.5,0.5" Margin="0,-1,0,0" Width="13">
+												<Button.RenderTransform>
+													<TransformGroup>
+														<ScaleTransform/>
+														<SkewTransform/>
+														<RotateTransform Angle="-90.923"/>
+														<TranslateTransform/>
+													</TransformGroup>
+												</Button.RenderTransform>
+												<Button.Background>
+													<ImageBrush ImageSource="arrow.png"></ImageBrush>
+												</Button.Background>
+											</Button>
+										</Border>
+										<Border BorderThickness="0" Height="12.5">
+											<Button BorderThickness="0" RenderTransformOrigin="0.5,0.5" Margin="0,-1,0,0" Width="13">
+												<Button.RenderTransform>
+													<TransformGroup>
+														<ScaleTransform/>
+														<SkewTransform/>
+														<RotateTransform Angle="91.98"/>
+														<TranslateTransform/>
+													</TransformGroup>
+												</Button.RenderTransform>
+												<Button.Background>
+													<ImageBrush ImageSource="arrow.png"></ImageBrush>
+												</Button.Background>
+											</Button>
+										</Border>
+									</StackPanel>
+								</Border>
+							</StackPanel>
+						</Grid>
+						<Grid Height="44">
+							<StackPanel Orientation="Horizontal" Height="30" Width="600">
+								<Grid Width="200">
+									<TextBlock Text="National ID" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold" FontFamily="Lato"></TextBlock>
+								</Grid>
+								<Grid Width="400" Height="30">
+									<TextBox></TextBox>
+								</Grid>
+							</StackPanel>
+						</Grid>
+						<Grid Height="44">
+							<StackPanel Orientation="Horizontal" Height="30" Width="600">
+								<Grid Width="200">
+									<TextBlock Text="Gender" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold" FontFamily="Lato"></TextBlock>
+								</Grid>
+								<Grid Width="400">
+									<ComboBox x:Name="optionsComboBox"   Width="200" FontSize="20" FontFamily="Lato" FontWeight="SemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="#30646B">
+										<ComboBoxItem Content="Male" FontFamily="Lato" FontWeight="SemiBold" FontSize="20"/>
+										<ComboBoxItem Content="Female" FontFamily="Lato" FontWeight="SemiBold" FontSize="20"/>
+									</ComboBox>
+								</Grid>
+							</StackPanel>
+						</Grid>
+						<Grid Height="44">
+							<StackPanel Orientation="Horizontal" Height="30" Width="600">
+								<Grid Width="200">
+									<TextBlock Text="Phone Number" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold" FontFamily="Lato"></TextBlock>
+								</Grid>
+								<Grid Width="400" Height="30">
+									<TextBox></TextBox>
+								</Grid>
+							</StackPanel>
+						</Grid>
+						<Grid Height="44">
+							<StackPanel Orientation="Horizontal" Height="30" Width="600">
+								<Grid Width="200">
+									<TextBlock Text="Blood Group" FontSize="15" VerticalAlignment="Center" FontWeight="SemiBold" FontFamily="Lato"></TextBlock>
+								</Grid>
+								<Grid Width="400">
+									<ComboBox    Width="200" FontSize="20" FontFamily="Lato" FontWeight="SemiBold" VerticalAlignment="Top" HorizontalAlignment="Left" BorderBrush="#30646B">
+										<ComboBoxItem Content="Male" FontFamily="Lato" FontWeight="SemiBold" FontSize="20"/>
+										<ComboBoxItem Content="Female" FontFamily="Lato" FontWeight="SemiBold" FontSize="20"/>
+									</ComboBox>
+								</Grid>
+							</StackPanel>
+						</Grid>
+						<Grid Height="92">
+							<StackPanel Orientation="Horizontal" Height="62">
+								<Grid Width=" 200">
+									<TextBlock Text="Patient Status" FontSize="15" FontWeight="SemiBold" FontFamily="Lato" ></TextBlock>
+								</Grid>
+								<Grid Width="400">
+									<RichTextBox></RichTextBox>
+								</Grid>
+							</StackPanel>
+						</Grid>
+					</StackPanel>
+				</Grid>
+				<Grid x:Name="History" Width="600" Height="400" Visibility="Visible">
+					<ScrollViewer VerticalScrollBarVisibility="Visible">
+						<StackPanel Orientation="Vertical" >
+							<Grid x:Name="PastAndPresent" Height="200">
+								<StackPanel Orientation="Vertical" Height="200">
+									<Grid Height="45">
+										<Rectangle Fill="#7163ba" Height="35" Stroke="Gray" HorizontalAlignment="Left" Width="300" RadiusX="20" RadiusY="20"></Rectangle>
+										<TextBlock Text="Past and Present Medical History" Foreground="White" FontSize="15" FontWeight="Medium" FontFamily="Inter" TextAlignment="Center" Width="300" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Hypertension" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="70"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Heart Attack" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="70"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="High Cholestrol" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="80"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Stroke" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="30"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Cancer" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="40"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Heart Failure" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="60"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Clotting Disorder" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="80"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Diabetes" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="50"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Kidney Disease" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="90"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Thyroid Disease" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="90"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="How often do you consume alcohol?" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="200"></TextBlock>
+											<ComboBox Width="260" Height="20" VerticalAlignment="Bottom"></ComboBox>
+										</StackPanel>
+									</Grid>
+								</StackPanel>
+							</Grid>
+							<Grid x:Name="CurrentMedsAndAllergies" Height="100">
+								<StackPanel Orientation="Vertical" Height="200">
+									<Grid Height="45">
+										<Rectangle Fill="#7163ba" Height="35" Stroke="Gray" HorizontalAlignment="Left" Width="300" RadiusX="20" RadiusY="20"></Rectangle>
+										<TextBlock Text="Current Medications and Allergies" Foreground="White" FontSize="15" FontWeight="Medium" FontFamily="Inter" TextAlignment="Center" Width="300" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Pencillin" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="30"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Aspirin" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="40"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Sulfa drugs" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="60"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="ibuprofen" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="80"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+								</StackPanel>
+							</Grid>
+							<Grid x:Name="ReviewOfSystems" >
+								<StackPanel Orientation="Vertical" Height="200">
+									<Grid Height="45">
+										<Rectangle Fill="#7163ba" Height="35" Stroke="Gray" HorizontalAlignment="Left" Width="300" RadiusX="20" RadiusY="20"></Rectangle>
+										<TextBlock Text="Review of Systems" Foreground="White" FontSize="15" FontWeight="Medium" FontFamily="Inter" TextAlignment="Center" Width="300" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Endocrine:" VerticalAlignment="Bottom" Foreground="Black" FontSize="15" FontWeight="SemiBold" FontFamily="Inter" Width="90"></TextBlock>
+											<TextBlock Text="Cold/heat intolerance" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="100"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="History of drug resistant infection" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="160"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Gastrointestinal:" VerticalAlignment="Bottom" Foreground="Black" FontSize="15" FontWeight="SemiBold" FontFamily="Inter" Width="120"></TextBlock>
+											<TextBlock Text="Abdominal pain" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="85"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Nausea/ vomiting" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="100"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Vomited blood" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="85"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Ulcer disease/ pain after eating" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="160"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Loss of apetite/ heartburn" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="150"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Ulcer disease/ pain after eating" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="160"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Constitutional:" VerticalAlignment="Bottom" Foreground="Black" FontSize="15" FontWeight="SemiBold" FontFamily="Inter" Width="120"></TextBlock>
+											<TextBlock Text="Fatigue/Drenching night sweats" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="160"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<TextBlock Text="Fever/chills" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="80"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Unexplained weight gain/loss" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="160"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+										</StackPanel>
+									</Grid>
+								</StackPanel>
+							</Grid>
+							<Grid x:Name="SurgicalHistory" >
+								<StackPanel Orientation="Vertical" Height="200">
+									<Grid Height="45">
+										<Rectangle Fill="#7163ba" Height="35" Stroke="Gray" HorizontalAlignment="Left" Width="300" RadiusX="20" RadiusY="20"></Rectangle>
+										<TextBlock Text="Surgical History" Foreground="White" FontSize="15" FontWeight="Medium" FontFamily="Inter" TextAlignment="Center" Width="300" HorizontalAlignment="Left" VerticalAlignment="Center"></TextBlock>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Cartoid Surgery" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="80"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<DatePicker Width="100" Height="20" BorderThickness="0" VerticalAlignment="Bottom"></DatePicker>
+											<TextBlock Text="Heart stent/bypass" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="90"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<DatePicker Width="100" Height="20" BorderThickness="0" VerticalAlignment="Bottom"></DatePicker>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Laparoscopy (abdominal scope)" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="160"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<DatePicker Width="100" Height="30" BorderThickness="0" VerticalAlignment="Bottom"></DatePicker>
+											<TextBlock Text="Pacemaker" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="40"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="Yes" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="20"></TextBlock>
+											<CheckBox VerticalAlignment="Bottom"></CheckBox>
+											<TextBlock Text="No" Foreground="Black" FontSize="10" VerticalAlignment="Bottom" FontWeight="Medium" FontFamily="Inter" Width="35"></TextBlock>
+											<DatePicker Width="100" Height="30" BorderThickness="0" VerticalAlignment="Bottom"></DatePicker>
+										</StackPanel>
+									</Grid>
+									<Grid>
+										<StackPanel Orientation="Horizontal" Height="30">
+											<TextBlock Text="Other surgeries" VerticalAlignment="Bottom" Foreground="Black" FontSize="10" FontWeight="Medium" FontFamily="Inter" Width="100"></TextBlock>
+											<TextBox Height="25" Width="400" VerticalContentAlignment="Bottom"></TextBox>
+										</StackPanel>
+									</Grid>
+								</StackPanel>
+							</Grid>
+						</StackPanel>
+					</ScrollViewer>
+				</Grid>
+				<Grid Height="100">
+					<StackPanel Orientation="Horizontal" Height="50">
+						<Grid Width="200" HorizontalAlignment="Center">
+							<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Background="#7163ba" Foreground="White"  Height="30" Width="116" Content="Edit" FontFamily="Inter" FontSize="15" FontWeight="Medium"></Button>
+						</Grid>
+						<Grid Width="200" HorizontalAlignment="Center">
+							<Button  HorizontalAlignment="Center" VerticalAlignment="Center" Background="#7163ba" Foreground="White"  Height="30" Width="116" Content="Save" FontFamily="Inter" FontSize="15" FontWeight="Medium"></Button>
+						</Grid>
+						<Grid Width="200" HorizontalAlignment="Center">
+							<Button x:Name="cancel" HorizontalAlignment="Center" VerticalAlignment="Center" Background="#7163ba" Foreground="White"  Height="30" Width="116" Content="Cancel" FontFamily="Inter" FontSize="15" FontWeight="Medium" Click="cancel_Click"></Button>
+						</Grid>
+					</StackPanel>
+				</Grid>
+
+			</StackPanel>
+		</StackPanel>
+
+	</Grid>
+</Window>
